@@ -1,0 +1,91 @@
+Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
+ -> (Pair (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" 0) (Pair {} {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662})) (Pair (Pair {} False) (Pair {} {})))
+ => ./Non_Fungible_Token/step_000_cont_0_storage.tz 1
+ => ./Non_Fungible_Token/step_000_cont_0_storage.json 24
+ => ./Non_Fungible_Token/step_000_cont_0_sizes.csv 2
+ => ./Non_Fungible_Token/step_000_cont_0_storage.py 1
+ => ./Non_Fungible_Token/step_000_cont_0_types.py 7
+ => ./Non_Fungible_Token/step_000_cont_0_metadata.metadata_base.json 183
+ => ./Non_Fungible_Token/step_000_cont_0_contract.tz 805
+ => ./Non_Fungible_Token/step_000_cont_0_contract.json 1062
+ => ./Non_Fungible_Token/step_000_cont_0_contract.py 87
+Comment...
+ h1: MarketPlace
+Creating contract KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 0)))
+ => ./Non_Fungible_Token/step_002_cont_1_storage.tz 1
+ => ./Non_Fungible_Token/step_002_cont_1_storage.json 18
+ => ./Non_Fungible_Token/step_002_cont_1_sizes.csv 2
+ => ./Non_Fungible_Token/step_002_cont_1_storage.py 1
+ => ./Non_Fungible_Token/step_002_cont_1_types.py 7
+ => ./Non_Fungible_Token/step_002_cont_1_contract.tz 360
+ => ./Non_Fungible_Token/step_002_cont_1_contract.json 435
+ => ./Non_Fungible_Token/step_002_cont_1_contract.py 37
+Comment...
+ h1: Mint
+ => ./Non_Fungible_Token/step_004_cont_1_params.py 1
+ => ./Non_Fungible_Token/step_004_cont_1_params.tz 1
+ => ./Non_Fungible_Token/step_004_cont_1_params.json 10
+Executing mint(sp.record(amount = 100000000, metadata = sp.pack('ipfs://bafyreibwl5hhjgrat5l7cmjlv6ppwghm6ijygpz2xor2r6incfcxnl7y3e/metadata.json')))...
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {Elt 0 (Pair (Pair 100000000 "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0)))}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 1)))
+  + Transfer
+     params: sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e')}, token_id = 0)
+     amount: sp.tez(0)
+     to:     sp.contract(sp.TRecord(address = sp.TAddress, amount = sp.TNat, metadata = sp.TMap(sp.TString, sp.TBytes), token_id = sp.TNat).layout((("address", "amount"), ("metadata", "token_id"))), sp.address('KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1%mint')).open_some()
+Executing (queue) mint(sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e')}, token_id = 0))...
+ -> --- Expected failure in transaction --- Wrong condition: (sp.sender == self.data.administrator : sp.TBool) (//smartpy.io/dev/templates/FA2.py, line 498)
+Message: 'FA2_NOT_ADMIN'
+ (//smartpy.io/dev/templates/FA2.py, line 523)
+ => ./Non_Fungible_Token/step_005_cont_0_params.py 1
+ => ./Non_Fungible_Token/step_005_cont_0_params.tz 1
+ => ./Non_Fungible_Token/step_005_cont_0_params.json 1
+Executing set_administrator(sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'))...
+ -> (Pair (Pair (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0) (Pair {} {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662})) (Pair (Pair {} False) (Pair {} {})))
+ => ./Non_Fungible_Token/step_006_cont_1_params.py 1
+ => ./Non_Fungible_Token/step_006_cont_1_params.tz 1
+ => ./Non_Fungible_Token/step_006_cont_1_params.json 10
+Executing mint(sp.record(amount = 100000000, metadata = sp.pack('ipfs://bafyreibwl5hhjgrat5l7cmjlv6ppwghm6ijygpz2xor2r6incfcxnl7y3e/metadata.json')))...
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {Elt 0 (Pair (Pair 100000000 "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0)))}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 1)))
+  + Transfer
+     params: sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e')}, token_id = 0)
+     amount: sp.tez(0)
+     to:     sp.contract(sp.TRecord(address = sp.TAddress, amount = sp.TNat, metadata = sp.TMap(sp.TString, sp.TBytes), token_id = sp.TNat).layout((("address", "amount"), ("metadata", "token_id"))), sp.address('KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1%mint')).open_some()
+Executing (queue) mint(sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e')}, token_id = 0))...
+ -> (Pair (Pair (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 1) (Pair {Elt (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0) 1} {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662})) (Pair (Pair {} False) (Pair {Elt 0 (Pair 0 {Elt "" 0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e})} {Elt 0 1})))
+ => ./Non_Fungible_Token/step_007_cont_1_params.py 1
+ => ./Non_Fungible_Token/step_007_cont_1_params.tz 1
+ => ./Non_Fungible_Token/step_007_cont_1_params.json 1
+Executing mint(sp.record(amount = 5600000, metadata = sp.pack('123423')))...
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {Elt 0 (Pair (Pair 100000000 "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0))); Elt 1 (Pair (Pair 5600000 "tz1hZUk7kLKkbJ9RnPzxzkkDrVtVsZTc4DmJ") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 1)))}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 2)))
+  + Transfer
+     params: sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000006313233343233')}, token_id = 1)
+     amount: sp.tez(0)
+     to:     sp.contract(sp.TRecord(address = sp.TAddress, amount = sp.TNat, metadata = sp.TMap(sp.TString, sp.TBytes), token_id = sp.TNat).layout((("address", "amount"), ("metadata", "token_id"))), sp.address('KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1%mint')).open_some()
+Executing (queue) mint(sp.record(address = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), amount = 1, metadata = {'' : sp.bytes('0x050100000006313233343233')}, token_id = 1))...
+ -> (Pair (Pair (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 2) (Pair {Elt (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0) 1; Elt (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 1) 1} {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662})) (Pair (Pair {} False) (Pair {Elt 0 (Pair 0 {Elt "" 0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e}); Elt 1 (Pair 1 {Elt "" 0x050100000006313233343233})} {Elt 0 1; Elt 1 1})))
+Comment...
+ h1: Collect
+ => ./Non_Fungible_Token/step_009_cont_1_params.py 1
+ => ./Non_Fungible_Token/step_009_cont_1_params.tz 1
+ => ./Non_Fungible_Token/step_009_cont_1_params.json 1
+Executing collect(sp.record(token_id = 1))...
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {Elt 0 (Pair (Pair 100000000 "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0))); Elt 1 (Pair (Pair 5600000 "tz1hZUk7kLKkbJ9RnPzxzkkDrVtVsZTc4DmJ") (Pair False (Pair "tz1KouJrf2JFUx8y15pZv7B36dtYQ3GcgJu3" 1)))}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 2)))
+  + Transfer
+     params: sp.unit
+     amount: sp.mutez(5432000)
+     to:     sp.contract(sp.TUnit, sp.address('tz1hZUk7kLKkbJ9RnPzxzkkDrVtVsZTc4DmJ')).open_some()
+  + Transfer
+     params: [sp.record(from_ = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), txs = [sp.record(to_ = sp.address('tz1KouJrf2JFUx8y15pZv7B36dtYQ3GcgJu3'), token_id = 1, amount = 1)])]
+     amount: sp.tez(0)
+     to:     sp.contract(sp.TList(sp.TRecord(from_ = sp.TAddress, txs = sp.TList(sp.TRecord(amount = sp.TNat, to_ = sp.TAddress, token_id = sp.TNat).layout(("to_", ("token_id", "amount"))))).layout(("from_", "txs"))), sp.address('KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1%transfer')).open_some()
+Executing (queue) transfer([sp.record(from_ = sp.address('KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF'), txs = [sp.record(to_ = sp.address('tz1KouJrf2JFUx8y15pZv7B36dtYQ3GcgJu3'), token_id = 1, amount = 1)])])...
+ -> (Pair (Pair (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 2) (Pair {Elt (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0) 1; Elt (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 1) 0; Elt (Pair "tz1KouJrf2JFUx8y15pZv7B36dtYQ3GcgJu3" 1) 1} {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662})) (Pair (Pair {} False) (Pair {Elt 0 (Pair 0 {Elt "" 0x050100000050697066733a2f2f6261667972656962776c3568686a67726174356c37636d6a6c763670707767686d36696a7967707a32786f72327236696e636663786e6c377933652f6d657461646174612e6a736f6e}); Elt 1 (Pair 1 {Elt "" 0x050100000006313233343233})} {Elt 0 1; Elt 1 1})))
+ => ./Non_Fungible_Token/step_010_cont_1_params.py 1
+ => ./Non_Fungible_Token/step_010_cont_1_params.tz 1
+ => ./Non_Fungible_Token/step_010_cont_1_params.json 1
+Executing collect_management_rewards(sp.record(address = sp.resolve(sp.test_account("admin").address), amount = sp.mutez(1000)))...
+ -> (Pair (Pair "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5" {Elt 0 (Pair (Pair 100000000 "tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5") (Pair True (Pair "KT1Tezooo1zzSmartPyzzSTATiCzzzyfC8eF" 0))); Elt 1 (Pair (Pair 5600000 "tz1hZUk7kLKkbJ9RnPzxzkkDrVtVsZTc4DmJ") (Pair False (Pair "tz1KouJrf2JFUx8y15pZv7B36dtYQ3GcgJu3" 1)))}) (Pair {Elt "" 0x697066733a2f2f516d57386a504d64426d46767353456f4c57505068616f7a4e366a47514678786b77754d4c745646714579364662} (Pair "KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1" 2)))
+  + Transfer
+     params: sp.unit
+     amount: sp.mutez(1000)
+     to:     sp.contract(sp.TUnit, sp.address('tz1UyQDepgtUBnWjyzzonqeDwaiWoQzRKSP5')).open_some()
